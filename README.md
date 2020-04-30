@@ -7,6 +7,18 @@ These tutorials will cover concepts using ROS Melodic.
 
 ## Requirements
 
+Docker
+
+C++
+* CMake is helpful, but not required
+
+Command Line
+
+Linux OS (for X Server, which allows visualization with Docker container)
+* this may be something you can install with windows or mac
+  * https://askubuntu.com/questions/7881/what-is-the-x-server
+  * https://en.wikipedia.org/wiki/X_Window_System
+
 ## Setup
 
 ## Tutorials
