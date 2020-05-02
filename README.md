@@ -13,8 +13,9 @@ C++
 * CMake is helpful, but not required
 
 Command Line
+* Tutorial: http://www.ee.surrey.ac.uk/Teaching/Unix/
 
-Linux OS (for X Server, which allows visualization with Docker container)
+Unix-based OS (for X Server, which allows visualization with Docker container)
 * this may be something you can install with windows or mac
   * https://askubuntu.com/questions/7881/what-is-the-x-server
   * https://en.wikipedia.org/wiki/X_Window_System
