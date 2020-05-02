@@ -28,6 +28,7 @@ ROS Community:
 Other ROS Resources:
 * Catkin: https://wiki.ros.org/catkin
 * ROS Core Stacks ([rosdistro](https://github.com/ros/rosdistro) is useful): https://github.com/ros
+* [packages.ros.org](http://packages.ros.org/)
 * URDF: https://wiki.ros.org/urdf
 * ROS 2 Design (if you're interested in learning more about ROS 2): http://design.ros2.org/
 
@@ -43,3 +44,4 @@ Docker:
 * NVIDIA Docker (for using Docker containers with NVIDIA GPUs): https://github.com/NVIDIA/nvidia-docker
 * Using Docker with ROS: https://wiki.ros.org/docker
 * Available Docker images with ROS installed from Docker Hub: https://hub.docker.com/r/osrf/ros
+* Official images: https://github.com/docker-library/official-images
