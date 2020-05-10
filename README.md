@@ -27,6 +27,7 @@ ROS Community:
 
 Other ROS Resources:
 * Catkin: https://wiki.ros.org/catkin
+* ROS Use Patterns and Best Practices: https://wiki.ros.org/ROS/Patterns
 * ROS Core Stacks ([rosdistro](https://github.com/ros/rosdistro) is useful): https://github.com/ros
 * [packages.ros.org](http://packages.ros.org/)
 * URDF: https://wiki.ros.org/urdf
