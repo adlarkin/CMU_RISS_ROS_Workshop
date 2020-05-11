@@ -1,5 +1,7 @@
 # ROS at a Conceptual Level
 
+TODO add images for each section if possible?
+
 Before we learn how to develop robotics applications with ROS, we need to understand the ROS architecture.
 
 ## Publisher/Subscriber Model
