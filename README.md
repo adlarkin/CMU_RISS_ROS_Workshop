@@ -43,7 +43,6 @@ These tutorials will cover concepts using ROS Melodic.
 4. Creating Our Own Package
     * catkin_create_pkg
       * CMakeLists.txt vs package.xml
-    * catkin_make vs catkin_make_isolated vs colcon
 
 5. Writing Our Own Publisher and Subscriber
 
