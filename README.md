@@ -5,18 +5,22 @@ These tutorials will cover concepts using ROS Melodic.
 
 ## Table of Contents
 
+## Requirements
+
+## Setup
+
+## Tutorials
+
 1. What is ROS?
 
 2. ROS at a Conceptual Level
-    * Master
     * Publisher/Subscriber Model
       * Nodes
       * Topics
       * Messages
     * Services
-      * Service Type
     * Parameters
-      * Parameter Server
+    * Master
     * Packages
     * Workspaces
     * Catkin
@@ -39,7 +43,6 @@ These tutorials will cover concepts using ROS Melodic.
 4. Creating Our Own Package
     * catkin_create_pkg
       * CMakeLists.txt vs package.xml
-    * catkin_make vs catkin_make_isolated vs colcon
 
 5. Writing Our Own Publisher and Subscriber
 
@@ -58,12 +61,6 @@ These tutorials will cover concepts using ROS Melodic.
     * Workspace Overlays
 
 11. (Maybe one of the MRSD assignments - apriltags?)
-
-## Requirements
-
-## Setup
-
-## Tutorials
 
 ## Additional Resources
 
