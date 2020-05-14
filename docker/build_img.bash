@@ -1,4 +1,9 @@
-# TODOs
-# 1. replace "ros_tutorials_melodic" with a shell argument "img_name"
+#!/usr/bin/env bash
 
-docker build -t ros_tutorials_melodic --build-arg user_id=$(id -u) .
+if [ $# -ne 1 ]
+then
+  echo "Usage: $0 IMAGE_NAME"
+  exit 1
+fi
+
+docker build -t $1 --build-arg user_id=$(id -u) .
