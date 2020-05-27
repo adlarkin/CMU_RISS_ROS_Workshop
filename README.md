@@ -29,9 +29,7 @@ These tutorials will cover concepts using ROS Melodic.
 3. Commandline Tools
     * roscore
     * rosrun
-    * roslaunch
-    * rqt
-      * rqt_graph
+    * rqt_graph
     * rosnode
     * rostopic
     * rosmsg
