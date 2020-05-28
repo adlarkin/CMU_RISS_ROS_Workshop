@@ -43,6 +43,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # install other packages (for things like development)
 RUN apt-get update && apt-get install -y --no-install-recommends \
+  tmux \
   tree \
   vim \
   && rm -rf /var/lib/apt/lists/*
