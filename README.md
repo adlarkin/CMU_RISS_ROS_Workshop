@@ -46,19 +46,7 @@ These tutorials will cover concepts using ROS Melodic.
 
 6. Using Custom Message Types
 
-7. Writing Our Own Service
-
-8. Using Custom Service Types
-
-9. Roslaunch
-
-10. Other Topics
-    * rosdep
-      * Using Binary Packages vs Building From Source
-    * rviz
-    * Workspace Overlays
-
-11. (Maybe one of the MRSD assignments - apriltags?)
+7. Roslaunch
 
 ## Additional Resources
 
