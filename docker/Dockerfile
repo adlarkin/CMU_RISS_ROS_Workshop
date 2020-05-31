@@ -43,6 +43,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # install other packages (for things like development)
 RUN apt-get update && apt-get install -y --no-install-recommends \
+  python3-colcon-common-extensions \
   tmux \
   tree \
   vim \
