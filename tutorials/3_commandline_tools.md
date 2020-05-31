@@ -13,8 +13,8 @@ $ cd <PATH_TO_REPO>/docker
 $ ./run_container.bash ~/
 ```
 
-The rest of the commands in this tutorial should be run in the Docker container.
-If you need to open another shell in the container, remember that you can run `join.bash`:
+_The rest of the commands in the following tutorials should be run in the Docker container (unless explicitly stated otherwise).
+If you need to open another shell in the container, remember that you can run `join.bash`:_
 
 ```
 # open a new terminal
@@ -140,7 +140,7 @@ You should see output similar to this:
 /turtlesim
 ```
 
-This means that we have three nodes currently running. 
+This means that we have three nodes currently running.
 `/turtlesim` and `/rqt_gui_py_node_725` come from running `turtlesim_node` and `rqt_graph`, respectively.
 `/rosout` is a node that always runs during a ROS program, and is used for logging purposes.
 More information on `rosout` can be found [here](https://wiki.ros.org/rosout).
@@ -157,15 +157,15 @@ We are provided with the topics this node publishes/subscribes to (along with th
 ```
 --------------------------------------------------------------------------------
 Node [/turtlesim]
-Publications: 
+Publications:
  * /rosout [rosgraph_msgs/Log]
  * /turtle1/color_sensor [turtlesim/Color]
  * /turtle1/pose [turtlesim/Pose]
 
-Subscriptions: 
+Subscriptions:
  * /turtle1/cmd_vel [unknown type]
 
-Services: 
+Services:
  * /clear
  * /kill
  * /reset
@@ -226,7 +226,7 @@ We are provided with the topic's message type, publishers, and subscribers:
 ```
 Type: turtlesim/Pose
 
-Publishers: 
+Publishers:
  * /turtlesim (http://fd2881773ac7:34969/)
 
 Subscribers: None
