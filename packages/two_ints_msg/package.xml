@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>two_ints_msg</name>
+  <version>0.0.0</version>
+  <description>Defines a message type of 2 64-bit integers.</description>
+
+  <maintainer email="dev@todo.todo">dev</maintainer>
+
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+</package>
