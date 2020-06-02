@@ -1,14 +1,25 @@
-# ROS_Tutorials
+# CMU_RISS_ROS_Workshop
+
 A set of interactive tutorials for learning ROS (Robot Operating System).
+This tutorial was initially designed to be used as a workshop for Carnegie Mellon's 2020 [RISS](https://riss.ri.cmu.edu/) program, but can be used by anyone who is interested in learning core ROS concepts in a few hours.
+This tutorial assumes no prior knowledge of ROS.
 
 These tutorials will cover concepts using ROS Melodic.
 
 ## Requirements
 
+### Host Machine With Unix-Based OS
+
+The Docker image provided in this tutorial relies on the [X Window System](https://en.wikipedia.org/wiki/X_Window_System) to show graphical displays.
+Most (if not all) Unix-based OS's should have this installed by default, so it is recommended to go through these tutorials on a Unix-based OS like Ubuntu to guarantee that you can view GUIs through Docker.
+
+If you don't already have a Unix-based OS like Ubuntu on your machine, please take a moment to install one now (Mac users should not have to worry about this).
+Windows users can either download an OS like Ubuntu as a virtual machine through something like [Virtualbox](https://www.virtualbox.org/) or dual-boot Ubuntu alongside Windows.
+
 ### Docker
 
 We will be using [Docker](https://www.docker.com/) so that you do not have to download ROS on your machine directly.
-You do not need to have prior knowledge about Docker to use it for these tutorials (although it is helpful), but you will need to install Docker on your machine.
+You do not need to have prior knowledge about Docker to use it for these tutorials, but you will need to install Docker on your machine.
 Please visit the tutorial's [docker](./docker/README.md) page and follow the instructions there to get ROS set up on your computer via Docker.
 
 ### C++
@@ -21,21 +32,13 @@ _CMake knowledge is helpful, but not required._
 ### Command Line
 
 You should be familiar with basic command line usage, along with things like shell environments.
-If you do not have much experience with using the Unix command line, take a look at this [tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/).
-
-### Host Machine With Unix-Based OS
-
-The Docker images provided in this tutorial rely on the [X Window System](https://en.wikipedia.org/wiki/X_Window_System) to show graphical displays.
-Most (if not all) Unix-based OS's should have this installed by default, so it is recommended to go through these tutorials on a Unix-based OS like Ubuntu to guarantee that you can view GUIs through Docker.
-
-If you don't already have a Unix-based OS like Ubuntu on your machine, please take a moment to install one now (Mac users should not have to worry about this).
-Windows users can either download an OS like Ubuntu as a virtual machine through something like [Virtualbox](https://www.virtualbox.org/) or dual-boot Ubuntu alongside Windows.
+If you do not have much experience using the Unix command line, take a look at this [tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/).
 
 ## Tutorials
 
-1. What is ROS?
+1. [What is ROS?](./tutorials/1_what_is_ROS.md)
 
-2. ROS at a Conceptual Level
+2. [ROS at a Conceptual Level](./tutorials/2_ROS_conceptual_level.md)
     * Publisher/Subscriber Model
       * Nodes
       * Topics
@@ -48,7 +51,7 @@ Windows users can either download an OS like Ubuntu as a virtual machine through
     * Catkin
       * Build System vs Build Tool
 
-3. Commandline Tools
+3. [Commandline Tools](./tutorials/3_commandline_tools.md)
     * roscore
     * rosrun
     * rqt_graph
@@ -60,15 +63,15 @@ Windows users can either download an OS like Ubuntu as a virtual machine through
     * rosparam
     * roscd & rosls
 
-4. Creating Our Own Package
+4. [Creating Our Own Package](./tutorials/4_creating_ROS_package.md)
     * catkin_create_pkg
       * CMakeLists.txt vs package.xml
 
-5. Writing Our Own Publisher and Subscriber
+5. [Writing Our Own Publisher and Subscriber](./tutorials/5_publisher_subscriber.md)
 
-6. Using Custom Message Types
+6. [Using Custom Message Types](./tutorials/6_custom_msgs.md)
 
-7. Roslaunch
+7. [Roslaunch](./tutorials/7_roslaunch.md)
 
 ## Additional Resources
 
