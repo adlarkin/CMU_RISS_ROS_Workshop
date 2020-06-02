@@ -116,14 +116,14 @@ I'd also recommend that you read through our package's `package.xml` file. This 
 As you read through the `package.xml` file, you may have noticed that there is a `description` tag.
 Let's update the description of this package:
 
-```
+```xml
 <description>Adds two ints together via a publisher/subscriber.</description>
 ```
 
 We can also update the license for our package.
 If you aren't sure what license you'd like to use, `MIT` should be fine:
 
-```
+```xml
 <license>MIT</license>
 ```
 
