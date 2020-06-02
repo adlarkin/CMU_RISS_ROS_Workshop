@@ -37,6 +37,28 @@ In the same directory, create a file called `two_int_msg_subscriber.launch` and 
 </launch>
 ```
 
+Your `adder` package file structure should now look like this:
+
+```
+adder
+├── CMakeLists.txt
+├── include
+│   └── adder
+│       └── rand_int_generator.h
+├── launch
+│   ├── two_int_msg_publisher.launch
+│   └── two_int_msg_subsriber.launch
+├── package.xml
+└── src
+    ├── rand_int_generator.cpp
+    ├── std_msgs_publisher.cpp
+    ├── std_msgs_subscriber.cpp
+    ├── two_ints_msg_publisher.cpp
+    └── two_ints_msg_subscriber.cpp
+
+4 directories, 10 files
+```
+
 Here are a few things to keep in mind about how `launch` files work:
 
 * We start with the `launch` tag.
@@ -78,8 +100,10 @@ $ colcon build
 Now, open another shell and try to run the publisher launch file:
 
 ```
+$ source ~/ws/install/setup.bash
+
 # the general syntax is "roslaunch package_name launch_file_name"
-$ roslaunch adder two_ints_msg_publisher.launch
+$ roslaunch adder two_int_msg_publisher.launch
 ```
 
 Notice how the launch file automatically started the ROS master for us!
@@ -91,9 +115,9 @@ Make another file in the `launch` directory called `add_ints.launch`, and place 
 
 ```xml
 <launch>
-  <include file="$(find adder)/launch/two_ints_msg_publisher.launch"/>
+  <include file="$(find adder)/launch/two_int_msg_publisher.launch"/>
 
-  <include file="$(find adder)/launch/two_ints_msg_subscriber.launch"/>
+  <include file="$(find adder)/launch/two_int_msg_subscriber.launch"/>
 </launch>
 ```
 

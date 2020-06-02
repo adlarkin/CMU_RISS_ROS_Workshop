@@ -134,7 +134,7 @@ Let's make sure that our message can be built:
 ```
 cd ~/ws/
 
-# we only need to build the message package to test it, not the adder package
+# since we're testing the message package, it's the only package we need to build
 $ colcon build --packages-select two_ints_msg
 ```
 
@@ -229,6 +229,25 @@ void SubscriberCB(const two_ints_msg::TwoIntsConstPtr & msg)
 
 Again, this file mimics `std_msgs_publisher.cpp`, but uses a different message type.
 
+Your `adder` package file structure should now look like this:
+
+```
+adder
+├── CMakeLists.txt
+├── include
+│   └── adder
+│       └── rand_int_generator.h
+├── package.xml
+└── src
+    ├── rand_int_generator.cpp
+    ├── std_msgs_publisher.cpp
+    ├── std_msgs_subscriber.cpp
+    ├── two_ints_msg_publisher.cpp
+    └── two_ints_msg_subscriber.cpp
+
+3 directories, 8 files
+```
+
 We need to update `adder`'s `CMakeLists.txt` to generate these new publisher and subscruber executables:
 
 ```cmake
@@ -313,6 +332,13 @@ Let's make sure we don't forget to update the `adder`'s `package.xml` file as we
 Great! The `adder` package has now been set up to use the message we created in the `two_ints_msg` package.
 
 ### Testing the Custom Message Publisher and Subscriber
+
+Re-build the packages in our workspace to make sure that our new publisher and subscriber executables are generated:
+
+```
+$ cd ~/ws
+$ colcon build
+```
 
 Let's run our new publisher and subscriber to make sure that they work:
 
