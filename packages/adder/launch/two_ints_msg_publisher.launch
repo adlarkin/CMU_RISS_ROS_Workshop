@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="adder" type="adder_two_ints_msg_pub" name="ints_publisher"/>
+</launch>
