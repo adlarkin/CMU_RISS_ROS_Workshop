@@ -3,24 +3,33 @@ A set of interactive tutorials for learning ROS (Robot Operating System).
 
 These tutorials will cover concepts using ROS Melodic.
 
-## Table of Contents
-
 ## Requirements
 
-Docker
+### Docker
 
-C++
-* CMake is helpful, but not required
+We will be using [Docker](https://www.docker.com/) so that you do not have to download ROS on your machine directly.
+You do not need to have prior knowledge about Docker to use it for these tutorials (although it is helpful), but you will need to install Docker on your machine.
+Please visit the tutorial's [docker](./docker/README.md) page and follow the instructions there to get ROS set up on your computer via Docker.
 
-Command Line
-* Tutorial: http://www.ee.surrey.ac.uk/Teaching/Unix/
+### C++
 
-Unix-based OS (for X Server, which allows visualization with Docker container)
-* this may be something you can install with windows or mac
-  * https://askubuntu.com/questions/7881/what-is-the-x-server
-  * https://en.wikipedia.org/wiki/X_Window_System
+We will be writing ROS programs in c++, so a basic knowledge of c++ is required.
+If you need to brush up on your c++ skills, you can take a look at this [tutorial](https://learncpp.com/).
 
-## Setup
+_CMake knowledge is helpful, but not required._
+
+### Command Line
+
+You should be familiar with basic command line usage, along with things like shell environments.
+If you do not have much experience with using the Unix command line, take a look at this [tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/).
+
+### Host Machine With Unix-Based OS
+
+The Docker images provided in this tutorial rely on the [X Window System](https://en.wikipedia.org/wiki/X_Window_System) to show graphical displays.
+Most (if not all) Unix-based OS's should have this installed by default, so it is recommended to go through these tutorials on a Unix-based OS like Ubuntu to guarantee that you can view GUIs through Docker.
+
+If you don't already have a Unix-based OS like Ubuntu on your machine, please take a moment to install one now (Mac users should not have to worry about this).
+Windows users can either download an OS like Ubuntu as a virtual machine through something like [Virtualbox](https://www.virtualbox.org/) or dual-boot Ubuntu alongside Windows.
 
 ## Tutorials
 
