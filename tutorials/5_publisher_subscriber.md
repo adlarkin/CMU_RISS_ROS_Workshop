@@ -167,6 +167,22 @@ std_msgs::Int64MultiArray generate_msg()
 }
 ```
 
+At this point, the file structure for your `adder` package should look like this:
+
+```
+adder
+├── CMakeLists.txt
+├── include
+│   └── adder
+│       └── rand_int_generator.h
+├── package.xml
+└── src
+    ├── rand_int_generator.cpp
+    └── std_msgs_publisher.cpp
+
+3 directories, 5 files
+```
+
 Take some time to read through the comments in the code to gain a better understanding of how to use the ROS c++ client library.
 If any of the code is difficult to understand (even after reading the comments), or if you'd like to learn more about writing a ROS publisher in c++, take a look at the [official ROS publisher/subscriber (c++) tutorial](https://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28c%2B%2B%29).
 
@@ -212,7 +228,7 @@ The reason for this is because although our package has been _built_, ROS doesn'
 So, in order to let ROS know about our new package, we need to run the following command (this is often called "sourcing a workspace"):
 
 ```
-$ source ws/install/setup.bash
+$ source ~/ws/install/setup.bash
 ```
 
 This command will add our package information (location on the file system, executables generated, etc) to an environment variable called `ROS_PACKAGE_PATH`, which is a list of paths that are searched for executables when running commands like `rosrun`:
@@ -399,6 +415,23 @@ void SubscriberCB(const std_msgs::Int64MultiArrayConstPtr & msg)
   ROS_INFO_STREAM("Received numbers " << msg->data[0] << " & " << msg->data[1]);
   ROS_INFO_STREAM("Sum is " << msg->data[0] + msg->data[1] << "\n");
 }
+```
+
+The file structure for your `adder` package should look like this now:
+
+```
+adder
+├── CMakeLists.txt
+├── include
+│   └── adder
+│       └── rand_int_generator.h
+├── package.xml
+└── src
+    ├── rand_int_generator.cpp
+    ├── std_msgs_publisher.cpp
+    └── std_msgs_subscriber.cpp
+
+3 directories, 6 files
 ```
 
 Once again, take a moment to read through the comments. If things are still unclear to you, feel free to take a look at the subscriber portion of the [official ROS publisher/subscriber (c++) tutorial](https://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28c%2B%2B%29).

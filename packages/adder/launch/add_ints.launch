@@ -1,5 +1,5 @@
 <launch>
-  <include file="$(find adder)/launch/two_ints_msg_publisher.launch"/>
+  <include file="$(find adder)/launch/two_int_msg_publisher.launch"/>
 
-  <include file="$(find adder)/launch/two_ints_msg_subscriber.launch"/>
+  <include file="$(find adder)/launch/two_int_msg_subscriber.launch"/>
 </launch>

@@ -30,7 +30,7 @@ $ mkdir ~/packages
 
 # load this directory as a volume in the Docker container
 $ cd <PATH_TO_REPO>/docker
-$ ./run_dev_container.bash ~/packages
+$ ./run_container.bash ~/packages
 
 # In the Docker container, create a ROS package inside the mounted volume
 $ cd ~/ws/src/
@@ -55,16 +55,14 @@ Successfully created files in /home/dev/ws/src/adder. Please adjust the values i
 Let's take a look at how the file structure is organized for this package:
 
 ```
-$ tree
-.
-└── adder
-    ├── CMakeLists.txt
-    ├── include
-    │   └── adder
-    ├── package.xml
-    └── src
+adder
+├── CMakeLists.txt
+├── include
+│   └── adder
+├── package.xml
+└── src
 
-4 directories, 2 files
+3 directories, 2 files
 ```
 
 As we can see, `catkin_create_pkg` went ahead and set up the ROS package file structure for us!
