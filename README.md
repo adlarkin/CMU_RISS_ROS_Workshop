@@ -23,7 +23,7 @@ ROS Community:
 * ROS Website: https://www.ros.org/
 * ROS Discourse (where lots of ROS announcements are made): https://discourse.ros.org/
 * ROS Index (info about ROS packages and repositories, as well as info about ROS 2): https://index.ros.org/
-* ROS Answers (useful for debugging ROS): https://answers.ros.org/questions/
+* ROS Answers (useful for ROS debugging/troubleshooting): https://answers.ros.org/questions/
 
 Other ROS Resources:
 * Catkin: https://wiki.ros.org/catkin
@@ -35,7 +35,7 @@ Other ROS Resources:
 
 Simulation:
 * Gazebo: http://gazebosim.org/
-* Ignition: https://ignitionrobotics.org/home 
+* Ignition: https://ignitionrobotics.org/home
 * SDF: http://sdformat.org/
 
 Docker:
@@ -45,4 +45,4 @@ Docker:
 * NVIDIA Docker (for using Docker containers with NVIDIA GPUs): https://github.com/NVIDIA/nvidia-docker
 * Using Docker with ROS: https://wiki.ros.org/docker
 * Available Docker images with ROS installed from Docker Hub: https://hub.docker.com/r/osrf/ros
-* Official images: https://github.com/docker-library/official-images
+* Official Docker images: https://github.com/docker-library/official-images
