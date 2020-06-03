@@ -108,3 +108,6 @@ Docker:
 * Using Docker with ROS: https://wiki.ros.org/docker
 * Available Docker images with ROS installed from Docker Hub: https://hub.docker.com/r/osrf/ros
 * Official Docker images: https://github.com/docker-library/official-images
+
+Here's a set of tutorials that show how to get involved with the DARPA SubT challenge.
+This is a great way to sharpen your ROS skills through a real robotics project: https://github.com/osrf/subt_hello_world
